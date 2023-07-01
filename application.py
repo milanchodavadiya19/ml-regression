@@ -6,6 +6,7 @@ application = Flask(__name__)
 
 app = application
 
+
 @app.route('/')
 @cross_origin()
 def home_page():
