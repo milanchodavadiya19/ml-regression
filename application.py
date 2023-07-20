@@ -39,7 +39,8 @@ def predict_datapoint():
         pred = predict_pipeline.predict(pred_df)
         results = round(pred[0],2)
         return render_template('index.html',results=results,pred_df = pred_df)
-    
+
+
 @app.route('/predictAPI',methods=['POST'])
 @cross_origin()
 def predict_api():
